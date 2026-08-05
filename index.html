@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css" media="all">
 </head>
@@ -14,11 +15,33 @@
            
             </div>
             <div id="formulario">
-
-            </div>
-            <form action="cadastro.java" method="post">
-                <h1>Login</h1>
+            <h1>Login</h1>
                 <p>Seja bem-vindo(a), Faça o seu login!</p>
+                </div>
+                <form action="cadastro.java" method="post">
+                <div class="campo">
+                <span class="material-symbols-outlined">person</span>
+                <input type="email" name="login" id="ilogin" placeholder="Digite seu e-mail" required autocomplete="e-mail" maxlength="50">
+                <label for="ilogin">
+                login
+                </label>
+                </div>
+
+                <div class="campo">
+                    <span class="material-symbols-outlined">vpn_key</span>
+                <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required autocomplete="current-password" maxlength="30">
+                    <label for="isenha">
+                    senha</label>
+
+                </div>
+
+                <input type="submit" value="Entrar">
+                <a href="esqueci.html">
+                    Esqueci minha senha
+                    <span class="material-symbols-outlined">email</span>
+                        
+               
+              </a>
             </form>
         </section>
     </main>
